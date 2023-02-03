@@ -5,50 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <!-- NavBar -->
-      <nav>
-        <div>logo</div>
-        <ul>
-          <li><a href="#">Collections</a></li>
-          <li><a href="#">Men</a></li>
-          <li><a href="#">Women</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div>
-          <!-- shopping cart -->
-          <div><img src="" alt="shopping cart" /></div>
-          <!-- user photo -->
-          <div><img src="" alt="user photo" /></div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!-- Hero -->
-      <img src="" alt="large featured sneaker with 4 smaller side views">
-      <section>
-        <div>
+    <div class="wrapper">
+      <header>
+        <!-- NavBar -->
+        <nav>
+          <div class="logo-nav-tabs">
+            <div class="logo">
+              <img src="./images/logo.svg" alt="store logo" />
+            </div>
+            <ul>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <!-- shopping cart and user container -->
+          <div class="cart-user-container">
+            <!-- shopping-cart-logo -->
+            <div class="cart-img">
+              <img src="./images/icon-cart.svg" alt="shopping cart" />
+            </div>
+            <!-- user photo -->
+            <div class="user-img">
+              <img src="./images/image-avatar.png" alt="user photo" />
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="product-image-container">
+          <div class="hero-image">
+            <img src="./images/image-product-1.jpg" alt="" />
+          </div>
+          <div class="thumbnail-container">
+            <div class="prod-1-tn">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="" />
+            </div>
+            <div class="prod-2-tn">
+              <img src="./images/image-product-2-thumbnail.jpg" alt="" />
+            </div>
+            <div class="prod-3-tn">
+              <img src="./images/image-product-3-thumbnail.jpg" alt="" />
+            </div>
+            <div class="prod-4-tn">
+              <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="text-container">
           <h1>SNEAKER COMPANY</h1>
           <h2>Fall Limited Edition Sneakers</h2>
           <p>
-These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.          </p>
-<div class="price-box">
-    <div class="after-discount-price">$125.00</div>
-    <div class="discount">50%</div>
-    <div class="original-price">$250.00</div>
-</div>
-<div class="adding-to-cart">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price-box">
+            <div class="net-discount">
+              <div class="after-discount-price">$125.00</div>
+              <div class="discount">50%</div>
+            </div>
+            <div class="original-price">$250.00</div>
+          </div>
+          <div class="adding-to-cart">
+            <div class="count-container">
+              <button class="minus">
+                <img src="./images/icon-minus.svg" alt="minus button" />
+              </button>
 
-    <button><img src="" alt="shopping-cart">
-        Add to cart</button>
+              <button class="count">0</button>
+              <button class="plus">
+                <img src="./images/icon-plus.svg" alt="plus button" />
+              </button>
+            </div>
+            <button>
+              <img src="./images/icon-cart.svg" alt="shopping-cart" /> Add to
+              cart
+            </button>
+          </div>
+        </section>
+      </main>
     </div>
-</div>
-        
-            
     <script src="script.js"></script>
   </body>
 </html>

@@ -210,3 +210,85 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 80%;
+  padding: 20px 0;
+}
+
+nav,
+ul,
+.logo-nav-tabs,
+.cart-user-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-nav-tabs,
+ul {
+  width: 60%;
+}
+
+.cart-user-container {
+  width: 15%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li a {
+  text-decoration: none;
+  color: #000;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.product-image-container,
+.text-container {
+  width: 50%;
+  padding: 0 2%;
+}
+.product-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 5%;
+}
+
+.prod-1-tn,
+.prod-2-tn,
+.prod-3-tn,
+.prod-4-tn {
+  width: 20%;
+}
+.prod-1-tn img,
+.prod-2-tn img,
+.prod-3-tn img,
+.prod-4-tn img {
+  max-width: 100%;
+  border-radius: 15%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
