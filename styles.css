@@ -5,6 +5,8 @@ html {
 }
 body {
   margin: 0;
+  font-size: 16px;
+  font-family: "Kumbh Sans";
 }
 article,
 aside,
@@ -291,4 +293,92 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+h1 {
+  color: #ff7d1a;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.home-text {
+  color: #636d83;
+  line-height: 2rem;
+}
+
+.net-discount {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.after-discount-price {
+  /* border: red 2px solid; */
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.discount {
+  /* border: yellow 2px solid; */
+  background-color: #ffede0;
+  align-self: center;
+  color: #ff7d1a;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  margin: 0 1.5rem;
+}
+
+.original-price {
+  color: #b6bcc8;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: line-through;
+  margin: 1rem 0;
+}
+.adding-to-cart {
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.count-container {
+  width: 40%;
+  background-color: #f7f8fd;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.plus,
+.minus,
+.count {
+  border-style: none;
+  background-color: transparent;
+}
+
+.add-to-cart {
+  width: 60%;
+  background-color: #ff7d1a;
+  color: #fff;
+  padding: 1rem;
+  border-style: none;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button-cart path {
+  fill: #fff;
+}
+
+.add-to-cart-text {
+  font-weight: 700;
 }
