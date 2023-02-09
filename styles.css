@@ -214,12 +214,16 @@ html {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
   width: 80%;
-  padding: 20px 0;
+  padding: 2rem 0;
 }
 
+nav {
+  padding-bottom: 2rem;
+  border-bottom: #f7f8fd 2px solid;
+}
 nav,
 ul,
 .logo-nav-tabs,
@@ -238,6 +242,15 @@ ul {
   width: 15%;
 }
 
+.user-img img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.user-img img:hover {
+  border: #ff7d1a 2px solid;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -245,18 +258,24 @@ ul {
 }
 li a {
   text-decoration: none;
+  color: #636d83;
+}
+
+li a:hover {
   color: #000;
+  padding-bottom: 2.9rem;
+  border-bottom: #ff7d1a 3px solid;
 }
 
 main {
   display: flex;
   justify-content: center;
+  padding-top: 6rem;
 }
 
 .product-image-container,
 .text-container {
-  width: 50%;
-  padding: 0 2%;
+  width: 45%;
 }
 .product-image-container {
   display: flex;
@@ -269,9 +288,12 @@ main {
   justify-content: space-between;
   margin-top: 1rem;
 }
-
+.hero-image,
+.thumbnail-container {
+  width: 80%;
+}
 .hero-image img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 5%;
 }
 
@@ -285,8 +307,16 @@ main {
 .prod-2-tn img,
 .prod-3-tn img,
 .prod-4-tn img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 15%;
+}
+
+.prod-1-tn img:hover,
+.prod-2-tn img:hover,
+.prod-3-tn img:hover,
+.prod-4-tn img:hover {
+  border: #ff7d1a 2px solid;
+  opacity: 0.3;
 }
 
 .text-container {
@@ -309,6 +339,7 @@ h2 {
 .home-text {
   color: #636d83;
   line-height: 2rem;
+  font-size: 1.1rem;
 }
 
 .net-discount {
@@ -317,13 +348,11 @@ h2 {
 }
 
 .after-discount-price {
-  /* border: red 2px solid; */
   font-weight: 700;
   font-size: 2rem;
 }
 
 .discount {
-  /* border: yellow 2px solid; */
   background-color: #ffede0;
   align-self: center;
   color: #ff7d1a;
@@ -339,7 +368,7 @@ h2 {
   font-size: 1rem;
   font-weight: 700;
   text-decoration: line-through;
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0;
 }
 .adding-to-cart {
   display: flex;
@@ -361,6 +390,7 @@ h2 {
 .count {
   border-style: none;
   background-color: transparent;
+  font-weight: 700;
 }
 
 .add-to-cart {
@@ -373,6 +403,11 @@ h2 {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  box-shadow: rgba(255, 125, 26, 0.9) 0px 25px 40px -20px;
+}
+
+.add-to-cart:hover {
+  opacity: 0.5;
 }
 
 .button-cart path {
