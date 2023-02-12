@@ -280,8 +280,8 @@ li a:hover {
   top: 6rem;
   right: 10%;
   border-radius: 5%;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
-    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .modal-open h3 {
@@ -411,8 +411,8 @@ h2 {
   background-color: #f7f8fd;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
   border-radius: 0.5rem;
+  padding: 0 1rem;
 }
 
 .plus,
