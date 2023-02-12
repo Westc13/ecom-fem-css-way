@@ -267,6 +267,14 @@ li a:hover {
   border-bottom: #ff7d1a 3px solid;
 }
 
+.modal {
+  display: none;
+}
+
+.modal-open {
+  display: block;
+}
+
 main {
   display: flex;
   justify-content: center;
