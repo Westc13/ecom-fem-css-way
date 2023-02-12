@@ -275,7 +275,7 @@ li a:hover {
   display: block;
   background-color: #fff;
   width: 30rem;
-  height: 20rem;
+  height: auto;
   position: absolute;
   top: 6rem;
   right: 10%;
@@ -292,10 +292,31 @@ li a:hover {
   padding-left: 2rem;
 }
 
-.modal-open p {
+.modal-open .modal-cart-content {
   border-top: #f7f8fd 1px solid;
   text-align: center;
   padding-top: 4rem;
+}
+
+.modal-open .item-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modal-open .price-container {
+  display: flex;
+  flex-direction: space-between;
+}
+
+.item-container .img-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.trash-can img {
+  width: 100%;
 }
 main {
   display: flex;
@@ -318,11 +339,11 @@ main {
   justify-content: space-between;
   margin-top: 1rem;
 }
-.hero-image,
+.hero-container,
 .thumbnail-container {
   width: 80%;
 }
-.hero-image img {
+.hero-container img {
   width: 100%;
   border-radius: 5%;
 }
