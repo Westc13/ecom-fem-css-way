@@ -47,11 +47,11 @@ const thumbnails = document.querySelectorAll(".thumbnail");
 const heroImage = document.querySelector(".hero-image");
 thumbnails.forEach((thumbnail, index) => {
   thumbnail.addEventListener("click", () => {
-    console.log("you've been clicked");
-    console.log(images[index].hero);
     heroImage.src = images[index].hero;
   });
 });
+
+// Build a pop up carousel for hero
 // Add modal cart contents
 // create ul to hold all the purchased items
 // each list contains an image of the item, the section they are from, individual item price, quantity and total price, as well as the trash can icon that can delete this entry
