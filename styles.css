@@ -273,8 +273,30 @@ li a:hover {
 
 .modal-open {
   display: block;
+  background-color: #fff;
+  width: 30rem;
+  height: 20rem;
+  position: absolute;
+  top: 6rem;
+  right: 10%;
+  border-radius: 5%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
+.modal-open h3 {
+  padding-bottom: 2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+.modal-open p {
+  border-top: #f7f8fd 1px solid;
+  text-align: center;
+  padding-top: 4rem;
+}
 main {
   display: flex;
   justify-content: center;
