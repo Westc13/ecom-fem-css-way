@@ -45,18 +45,49 @@ const images = [
 
 const thumbnails = document.querySelectorAll(".thumbnail");
 const heroImage = document.querySelector(".hero-image");
+const carousel = document.getElementById("carousel");
 thumbnails.forEach((thumbnail, index) => {
   thumbnail.addEventListener("click", () => {
     heroImage.src = images[index].hero;
+    carousel.classList.remove("carousel");
+    carousel.classList.add("carousel-open");
   });
 });
 
 // Build a pop up carousel for hero
+
+const closeCarousel = document.querySelector(".close-button");
+closeCarousel.addEventListener("click", () => {
+  carousel.classList.remove("carousel-open");
+  carousel.classList.add("carousel");
+});
+
+let slides = document.getElementsByClassName("slides");
+var slideIndex = 1;
+showSlides(slideIndex);
+
+const plusSlides = (n) => {
+  showSlides((slideIndex += n));
+};
+const showSlides = (n) => {
+  let i;
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+};
+
 // Add modal cart contents
 // create ul to hold all the purchased items
 // each list contains an image of the item, the section they are from, individual item price, quantity and total price, as well as the trash can icon that can delete this entry
 // STEP 1: create ul to hold all purchased items
-const list = document.createElement("ul");
+//const list = document.createElement("ul");
 // STEP 2: create li to hold each purchased items
-const listItems = [];
+//const listItems = [];
 //add thumbnail image of the product added to cart
